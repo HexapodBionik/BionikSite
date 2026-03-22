@@ -3,11 +3,12 @@
 
 import os
 import shutil
-import yaml
-import markdown
-import frontmatter
-from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
+
+import frontmatter
+import markdown
+import yaml
+from jinja2 import Environment, FileSystemLoader
 
 BASE_DIR = Path(__file__).parent
 CONTENT_DIR = BASE_DIR / "content"

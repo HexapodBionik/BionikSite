@@ -1,12 +1,11 @@
+local_backend: true
+
 backend:
   name: github
   repo: HexapodBionik/BionikSite
   branch: main
   auth_type: pkce
-  app_id: ""  # <-- Put your GitHub OAuth App Client ID here
-  # To create: GitHub Settings > Developer settings > OAuth Apps > New OAuth App
-  # Homepage URL: https://hexapodbionik.github.io/BionikSite/
-  # Callback URL: https://hexapodbionik.github.io/BionikSite/admin/
+  app_id: "Ov23lihIP5EBeBMCBOt0"
 
 media_folder: "static/images"
 public_folder: "/static/images"
