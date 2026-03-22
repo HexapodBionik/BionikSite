@@ -3,15 +3,12 @@ backend:
   repo: HexapodBionik/BionikSite
   branch: main
   auth_type: pkce
-  app_id: "Ov23lihIP5EBeBMCBOt0"
-
-# Uncomment the line below ONLY for local development with `npx decap-server`
-# local_backend: true
+  app_id: Ov23lihIP5EBeBMCBOt0
 
 site_url: https://hexapodbionik.github.io/BionikSite
 
 media_folder: "static/images"
-public_folder: "/static/images"
+public_folder: "/BionikSite/static/images"
 
 # Locales for the CMS interface
 locale: "pl"
