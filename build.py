@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Static site builder for KNR Bionik website."""
 
+import os
 import shutil
 import yaml
 import markdown
@@ -15,6 +16,10 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
 PUBLIC_DIR = BASE_DIR / "public"
 ADMIN_DIR = BASE_DIR / "admin"
+
+# Base URL for GitHub Pages project sites (e.g. "/BionikSite")
+# Set via environment variable or leave empty for root deployment
+BASE_URL = os.environ.get("BASE_URL", "").rstrip("/")
 
 LANGUAGES = ["pl", "en"]
 DEFAULT_LANG = "pl"
@@ -83,6 +88,7 @@ def build():
             other_lang=other_lang,
             content=content,
             data=data,
+            base_url=BASE_URL,
         )
 
         if lang == DEFAULT_LANG:
@@ -108,6 +114,7 @@ def build():
                     lang=lang,
                     project=project,
                     details_html=details_html,
+                    base_url=BASE_URL,
                 )
                 if lang == DEFAULT_LANG:
                     proj_dir = PUBLIC_DIR / "projects" / slug

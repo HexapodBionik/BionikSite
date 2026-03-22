@@ -48,8 +48,8 @@
         }
     </script>
 
-    <link rel="icon" type="image/svg+xml" href="/static/images/logo_color.svg">
-    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="icon" type="image/svg+xml" href="{{ base_url }}/static/images/logo_color.svg">
+    <link rel="stylesheet" href="{{ base_url }}/static/css/custom.css">
 </head>
 
 <body class="font-sans text-slate-800 bg-white antialiased">
@@ -62,7 +62,7 @@
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <!-- Logo -->
                 <a href="#hero" class="flex items-center gap-3 group">
-                    <img id="nav-logo" src="/static/images/logo_color.svg" alt="KNR Bionik"
+                    <img id="nav-logo" src="{{ base_url }}/static/images/logo_color.svg" alt="KNR Bionik"
                         class="h-9 w-auto logo-invert transition-all duration-300">
                     <span class="font-bold text-lg tracking-tight nav-text-color">KNR Bionik</span>
                 </a>
@@ -86,9 +86,9 @@
 
                     <!-- Language Toggle -->
                     <div class="ml-4 flex items-center border border-white/20 rounded-lg overflow-hidden text-sm">
-                        <a href="/"
+                        <a href="{{ base_url }}/"
                             class="px-3 py-1.5 font-medium transition-colors {% if lang == 'pl' %}bg-brand-600 text-white{% else %}nav-text-color hover:bg-white/10{% endif %}">PL</a>
-                        <a href="/en/"
+                        <a href="{{ base_url }}/en/"
                             class="px-3 py-1.5 font-medium transition-colors {% if lang == 'en' %}bg-brand-600 text-white{% else %}nav-text-color hover:bg-white/10{% endif %}">EN</a>
                     </div>
                 </div>
@@ -125,9 +125,9 @@
                     class="mobile-nav-link block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">{{
                     content.contact.meta.nav_title }}</a>
                 <div class="flex gap-2 px-4 pt-4">
-                    <a href="/"
+                    <a href="{{ base_url }}/"
                         class="px-4 py-2 rounded-lg text-sm font-medium {% if lang == 'pl' %}bg-brand-600 text-white{% else %}bg-white/10 text-white/80{% endif %}">PL</a>
-                    <a href="/en/"
+                    <a href="{{ base_url }}/en/"
                         class="px-4 py-2 rounded-lg text-sm font-medium {% if lang == 'en' %}bg-brand-600 text-white{% else %}bg-white/10 text-white/80{% endif %}">EN</a>
                 </div>
             </div>
@@ -156,7 +156,7 @@
 
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <div class="fade-in">
-                <img src="/static/images/logo_color.svg" alt="KNR Bionik"
+                <img src="{{ base_url }}/static/images/logo_color.svg" alt="KNR Bionik"
                     class="h-36 sm:h-48 lg:h-56 w-auto mx-auto mb-8 logo-invert">
                 <p class="text-brand-400 font-medium text-sm sm:text-base tracking-widest uppercase mb-6">
                     {{ content.hero.meta.subtitle }}
@@ -247,7 +247,7 @@
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {% for project in data.projects[lang] %}
-                    <a href="{% if lang == 'en' %}/en{% endif %}/projects/{{ project.slug }}/"
+                    <a href="{{ base_url }}{% if lang == 'en' %}/en{% endif %}/projects/{{ project.slug }}/"
                         class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 block">
                         <!-- Image / Visual -->
                         <div
@@ -519,7 +519,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-3 text-slate-500 text-sm">
-                    <img src="/static/images/logo_color.svg" alt="KNR Bionik" class="h-6 w-auto opacity-70 logo-invert">
+                    <img src="{{ base_url }}/static/images/logo_color.svg" alt="KNR Bionik" class="h-6 w-auto opacity-70 logo-invert">
                     <span>&copy; 2026 KNR Bionik</span>
                     <span class="hidden sm:inline">&middot;</span>
                     <span class="hidden sm:inline">{% if lang == 'pl' %}Politechnika Warszawska{% else %}Warsaw
@@ -534,7 +534,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="/static/js/main.js"></script>
+    <script src="{{ base_url }}/static/js/main.js"></script>
 </body>
 
 </html>

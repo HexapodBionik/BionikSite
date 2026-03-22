@@ -1,7 +1,12 @@
 backend:
   name: github
-  repo: your-username/bionik-site    # <-- Update with your GitHub repo (e.g. KNR-Bionik/bionik-site)
+  repo: HexapodBionik/BionikSite
   branch: main
+  auth_type: pkce
+  app_id: ""  # <-- Put your GitHub OAuth App Client ID here
+  # To create: GitHub Settings > Developer settings > OAuth Apps > New OAuth App
+  # Homepage URL: https://hexapodbionik.github.io/BionikSite/
+  # Callback URL: https://hexapodbionik.github.io/BionikSite/admin/
 
 media_folder: "static/images"
 public_folder: "/static/images"

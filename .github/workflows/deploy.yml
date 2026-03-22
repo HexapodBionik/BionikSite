@@ -29,7 +29,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
-        run: python build.py
+        run: BASE_URL="/BionikSite" python build.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
