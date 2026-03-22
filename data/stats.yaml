@@ -1,0 +1,19 @@
+pl:
+  - value: "2001"
+    label: "Rok założenia"
+  - value: "49"
+    label: "Aktualnych członków"
+  - value: "20+"
+    label: "Zrealizowanych projektów"
+  - value: "25+"
+    label: "Medali i nagród"
+
+en:
+  - value: "2001"
+    label: "Year founded"
+  - value: "49"
+    label: "Active members"
+  - value: "20+"
+    label: "Completed projects"
+  - value: "25+"
+    label: "Awards & medals"

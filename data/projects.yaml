@@ -1,0 +1,147 @@
+pl:
+  - name: "MiniRyś V4"
+    slug: "minirys-v4"
+    category: "Aktualny projekt"
+    description: "Grupa robotów balansujących na dwóch kołach. Flagowy projekt koła łączący mechanikę, elektronikę i sterowanie."
+    icon: "🤖"
+    gradient: "from-blue-500 to-indigo-600"
+    details: |
+      MiniRyś V4 to czwarta generacja naszego flagowego projektu — grupy małych robotów balansujących na dwóch kołach.
+
+      Projekt łączy w sobie wiele dziedzin inżynierii: projektowanie mechaniczne (CAD, druk 3D), elektronikę (PCB, mikrokontrolery STM32), oraz zaawansowane sterowanie (regulatory PID, filtry Kalmana).
+
+      Roboty komunikują się między sobą i mogą wykonywać skoordynowane zadania grupowe. Platforma służy zarówno do badań naukowych, jak i celów edukacyjnych.
+  - name: "Twitch Go"
+    slug: "twitch-go"
+    category: "Aktualny projekt"
+    description: "Platforma esportowa umożliwiająca interaktywne sterowanie robotami przez widzów transmisji na żywo."
+    icon: "🎮"
+    gradient: "from-purple-500 to-pink-600"
+    details: |
+      Twitch Go to innowacyjna platforma łącząca świat esportu z robotyką. Widzowie transmisji na żywo mogą w czasie rzeczywistym sterować fizycznymi robotami za pomocą komend na czacie.
+
+      System obejmuje: serwer backendowy obsługujący komendy, firmware robotów, oraz interfejs webowy do podglądu i zarządzania rozgrywką.
+
+      Projekt rozwija kompetencje z zakresu programowania sieciowego, systemów wbudowanych i projektowania interfejsów użytkownika.
+  - name: "Dobot Magician"
+    slug: "dobot"
+    category: "Robot"
+    description: "Manipulator dydaktyczny wykorzystywany do nauki programowania ramion robotycznych i automatyzacji zadań."
+    icon: "🦾"
+    gradient: "from-emerald-500 to-teal-600"
+    details: |
+      Dobot Magician to profesjonalny manipulator dydaktyczny, który wykorzystujemy do nauki programowania ramion robotycznych.
+
+      W ramach projektu członkowie koła uczą się kinematyki prostej i odwrotnej, planowania trajektorii, oraz programowania z użyciem ROS (Robot Operating System).
+
+      Robot znajduje zastosowanie w demonstracjach na wydarzeniach popularyzujących naukę oraz w codziennej pracy edukacyjnej koła.
+  - name: "Solobot"
+    slug: "solobot"
+    category: "Robot"
+    description: "Robot klasy MicroMouse — autonomiczne nawigowanie w labiryncie z użyciem zaawansowanych algorytmów."
+    icon: "🐭"
+    gradient: "from-amber-500 to-orange-600"
+    details: |
+      Solobot to robot klasy MicroMouse zaprojektowany do autonomicznego rozwiązywania labiryntów w jak najkrótszym czasie.
+
+      Wyposażony w zestaw sensorów odległości, precyzyjne enkodery i szybki mikrokontroler, robot mapuje labirynt w pierwszym przebiegu, a następnie oblicza optymalną ścieżkę algorytmem Flood-Fill.
+
+      Projekt wymaga umiejętności z zakresu elektroniki, programowania niskopoziomowego i teorii sterowania.
+  - name: "Elektron"
+    slug: "elektron"
+    category: "Robot laboratoryjny"
+    description: "Robot mobilny z bazą różnicową — platforma badawcza do eksperymentów z nawigacją i percepcją."
+    icon: "⚡"
+    gradient: "from-cyan-500 to-blue-600"
+    details: |
+      Elektron to duży robot mobilny z napędem różnicowym, służący jako platforma badawcza laboratorium.
+
+      Robot jest wyposażony w LIDAR, kamery, czujniki IMU oraz komputer pokładowy z ROS2 (Robot Operating System 2). Wykorzystywany jest do badań z zakresu SLAM, nawigacji autonomicznej i manipulacji mobilnej.
+
+      Jest jednym z najważniejszych narzędzi badawczych naszego laboratorium.
+  - name: "Ryś"
+    slug: "rys"
+    category: "Historyczny"
+    description: "Legendarny robot mobilny o zmiennym sposobie lokomocji — symbol koła i jego wieloletniej tradycji."
+    icon: "🐱"
+    gradient: "from-rose-500 to-red-600"
+    details: |
+      Ryś to legendarny robot mobilny, który jest symbolem i maskotką KNR Bionik. Wyróżnia go unikalna zdolność zmiany sposobu lokomocji — potrafi zarówno jeździć na kołach, jak i balansować na dwóch kołach.
+
+      Robot był wielokrotnie prezentowany na wydarzeniach popularyzujących naukę, dniach otwartych Politechniki Warszawskiej i zawodach robotycznych.
+
+      Przeszedł kilka generacji przebudowy i renowacji, pozostając jednym z najbardziej rozpoznawalnych projektów koła.
+
+en:
+  - name: "MiniRyś V4"
+    slug: "minirys-v4"
+    category: "Active project"
+    description: "A group of two-wheel self-balancing robots. The club's flagship project combining mechanics, electronics and control."
+    icon: "🤖"
+    gradient: "from-blue-500 to-indigo-600"
+    details: |
+      MiniRyś V4 is the fourth generation of our flagship project — a group of small two-wheel self-balancing robots.
+
+      The project combines multiple engineering disciplines: mechanical design (CAD, 3D printing), electronics (PCB, STM32 microcontrollers), and advanced control (PID controllers, Kalman filters).
+
+      The robots communicate with each other and can perform coordinated group tasks. The platform serves both research and educational purposes.
+  - name: "Twitch Go"
+    slug: "twitch-go"
+    category: "Active project"
+    description: "An esports platform enabling interactive robot control by live stream viewers."
+    icon: "🎮"
+    gradient: "from-purple-500 to-pink-600"
+    details: |
+      Twitch Go is an innovative platform combining the world of esports with robotics. Live stream viewers can control physical robots in real-time using chat commands.
+
+      The system includes: a backend server handling commands, robot firmware, and a web interface for viewing and managing gameplay.
+
+      The project develops skills in network programming, embedded systems, and user interface design.
+  - name: "Dobot Magician"
+    slug: "dobot"
+    category: "Robot"
+    description: "An educational manipulator used for learning robotic arm programming and task automation."
+    icon: "🦾"
+    gradient: "from-emerald-500 to-teal-600"
+    details: |
+      Dobot Magician is a professional educational manipulator that we use for learning robotic arm programming.
+
+      As part of the project, club members learn forward and inverse kinematics, trajectory planning, and programming with ROS (Robot Operating System).
+
+      The robot is used in demonstrations at science popularization events and in the club's everyday educational work.
+  - name: "Solobot"
+    slug: "solobot"
+    category: "Robot"
+    description: "A MicroMouse class robot — autonomous maze navigation using advanced algorithms."
+    icon: "🐭"
+    gradient: "from-amber-500 to-orange-600"
+    details: |
+      Solobot is a MicroMouse class robot designed for autonomous maze solving in the shortest possible time.
+
+      Equipped with distance sensors, precision encoders and a fast microcontroller, the robot maps the maze on its first run, then calculates the optimal path using the Flood-Fill algorithm.
+
+      The project requires skills in electronics, low-level programming and control theory.
+  - name: "Elektron"
+    slug: "elektron"
+    category: "Lab robot"
+    description: "A differential-drive mobile robot — research platform for navigation and perception experiments."
+    icon: "⚡"
+    gradient: "from-cyan-500 to-blue-600"
+    details: |
+      Elektron is a large differential-drive mobile robot serving as the laboratory's research platform.
+
+      The robot is equipped with LIDAR, cameras, IMU sensors and an onboard computer running ROS2 (Robot Operating System 2). It is used for research in SLAM, autonomous navigation and mobile manipulation.
+
+      It is one of the most important research tools in our laboratory.
+  - name: "Ryś"
+    slug: "rys"
+    category: "Historical"
+    description: "A legendary mobile robot with variable locomotion — the club's symbol and its long-standing tradition."
+    icon: "🐱"
+    gradient: "from-rose-500 to-red-600"
+    details: |
+      Ryś is a legendary mobile robot that serves as the symbol and mascot of KNR Bionik. It features a unique ability to change its locomotion mode — it can both drive on wheels and balance on two wheels.
+
+      The robot has been presented numerous times at science popularization events, Warsaw University of Technology open days, and robotics competitions.
+
+      It has gone through several generations of rebuilding and renovation, remaining one of the club's most recognizable projects.

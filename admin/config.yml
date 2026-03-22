@@ -1,0 +1,161 @@
+backend:
+  name: github
+  repo: your-username/bionik-site    # <-- Update with your GitHub repo (e.g. KNR-Bionik/bionik-site)
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/static/images"
+
+# Locales for the CMS interface
+locale: "pl"
+
+collections:
+  # --- Polish Content ---
+  - name: "content_pl"
+    label: "Treść (PL)"
+    files:
+      - name: "hero_pl"
+        label: "Strona główna (PL)"
+        file: "content/pl/hero.md"
+        fields:
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Podtytuł", name: "subtitle", widget: "string" }
+          - { label: "Opis", name: "description", widget: "text" }
+          - { label: "Uczelnia", name: "university", widget: "string" }
+          - { label: "Przycisk główny", name: "cta_primary", widget: "string" }
+          - { label: "Przycisk drugi", name: "cta_secondary", widget: "string" }
+      - name: "about_pl"
+        label: "O nas (PL)"
+        file: "content/pl/about.md"
+        fields:
+          - { label: "Tytuł nawigacji", name: "nav_title", widget: "string" }
+          - { label: "Etykieta", name: "label", widget: "string" }
+          - { label: "Tytuł sekcji", name: "title", widget: "string" }
+          - { label: "Treść", name: "body", widget: "markdown" }
+      - name: "projects_pl"
+        label: "Projekty (PL)"
+        file: "content/pl/projects.md"
+        fields:
+          - { label: "Tytuł nawigacji", name: "nav_title", widget: "string" }
+          - { label: "Etykieta", name: "label", widget: "string" }
+          - { label: "Tytuł sekcji", name: "title", widget: "string" }
+          - { label: "Opis", name: "description", widget: "text" }
+      - name: "achievements_pl"
+        label: "Osiągnięcia (PL)"
+        file: "content/pl/achievements.md"
+        fields:
+          - { label: "Tytuł nawigacji", name: "nav_title", widget: "string" }
+          - { label: "Etykieta", name: "label", widget: "string" }
+          - { label: "Tytuł sekcji", name: "title", widget: "string" }
+          - { label: "Opis", name: "description", widget: "text" }
+      - name: "recruitment_pl"
+        label: "Rekrutacja (PL)"
+        file: "content/pl/recruitment.md"
+        fields:
+          - { label: "Tytuł nawigacji", name: "nav_title", widget: "string" }
+          - { label: "Etykieta", name: "label", widget: "string" }
+          - { label: "Tytuł sekcji", name: "title", widget: "string" }
+          - { label: "Tytuł korzyści", name: "benefits_title", widget: "string" }
+          - { label: "CTA", name: "cta", widget: "string" }
+          - { label: "Treść", name: "body", widget: "markdown" }
+      - name: "contact_pl"
+        label: "Kontakt (PL)"
+        file: "content/pl/contact.md"
+        fields:
+          - { label: "Tytuł nawigacji", name: "nav_title", widget: "string" }
+          - { label: "Etykieta", name: "label", widget: "string" }
+          - { label: "Tytuł sekcji", name: "title", widget: "string" }
+
+  # --- English Content ---
+  - name: "content_en"
+    label: "Content (EN)"
+    files:
+      - name: "hero_en"
+        label: "Hero (EN)"
+        file: "content/en/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "University", name: "university", widget: "string" }
+          - { label: "Primary CTA", name: "cta_primary", widget: "string" }
+          - { label: "Secondary CTA", name: "cta_secondary", widget: "string" }
+      - name: "about_en"
+        label: "About (EN)"
+        file: "content/en/about.md"
+        fields:
+          - { label: "Nav title", name: "nav_title", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Section title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "projects_en"
+        label: "Projects (EN)"
+        file: "content/en/projects.md"
+        fields:
+          - { label: "Nav title", name: "nav_title", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Section title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - name: "achievements_en"
+        label: "Achievements (EN)"
+        file: "content/en/achievements.md"
+        fields:
+          - { label: "Nav title", name: "nav_title", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Section title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - name: "recruitment_en"
+        label: "Recruitment (EN)"
+        file: "content/en/recruitment.md"
+        fields:
+          - { label: "Nav title", name: "nav_title", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Section title", name: "title", widget: "string" }
+          - { label: "Benefits title", name: "benefits_title", widget: "string" }
+          - { label: "CTA", name: "cta", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "contact_en"
+        label: "Contact (EN)"
+        file: "content/en/contact.md"
+        fields:
+          - { label: "Nav title", name: "nav_title", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Section title", name: "title", widget: "string" }
+
+  # --- Data: Board ---
+  - name: "data_board"
+    label: "Zarząd / Board"
+    files:
+      - name: "board"
+        label: "Zarząd"
+        file: "data/board.yaml"
+        fields:
+          - label: "Opiekun / Supervisor"
+            name: "supervisor"
+            widget: "object"
+            fields:
+              - { label: "Imię i nazwisko", name: "name", widget: "string" }
+              - { label: "Rola (PL)", name: "role_pl", widget: "string" }
+              - { label: "Role (EN)", name: "role_en", widget: "string" }
+              - { label: "Od roku", name: "since", widget: "number" }
+          - label: "Członkowie zarządu / Board members"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "Imię i nazwisko", name: "name", widget: "string" }
+              - { label: "Rola (PL)", name: "role_pl", widget: "string" }
+              - { label: "Role (EN)", name: "role_en", widget: "string" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+
+  # --- Data: Contact ---
+  - name: "data_contact"
+    label: "Kontakt / Contact Info"
+    files:
+      - name: "contact_data"
+        label: "Dane kontaktowe"
+        file: "data/contact.yaml"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+          - { label: "Adres (PL)", name: "address_pl", widget: "string" }
+          - { label: "Address (EN)", name: "address_en", widget: "string" }

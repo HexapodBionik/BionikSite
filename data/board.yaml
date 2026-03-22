@@ -1,0 +1,19 @@
+supervisor:
+  name: "dr inż. Tomasz Winiarski"
+  role_pl: "Opiekun"
+  role_en: "Supervisor"
+  since: 2010
+
+members:
+  - name: "Bartłomiej Kwieciński"
+    role_pl: "Prezes"
+    role_en: "President"
+    email: "bartlomiej.kwiecinski.stud@pw.edu.pl"
+  - name: "Małgorzata Dulikowska"
+    role_pl: "Zastępca"
+    role_en: "Vice President"
+    email: "malgorzata.dulikowska.stud@pw.edu.pl"
+  - name: "Piotr Patek"
+    role_pl: "Sekretarz"
+    role_en: "Secretary"
+    email: "piotr.patek.stud@pw.edu.pl"

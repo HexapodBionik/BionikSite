@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project.name }} — KNR Bionik</title>
+    <meta name="description" content="{{ project.description }}">
+    <link rel="icon" type="image/svg+xml" href="/static/images/logo_color.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#eef4ff', 100: '#d9e5ff', 200: '#bcd0ff', 300: '#8eb1ff',
+                            400: '#5987ff', 500: '#3363fc', 600: '#1d43f1', 700: '#1530de',
+                            800: '#1829b4', 900: '#1a288e', 950: '#0c1349',
+                        },
+                        navy: { 700: '#1a2744', 800: '#111c35', 900: '#0b1326', 950: '#060b18' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/92 backdrop-blur-xl border-b border-black/6 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="flex items-center gap-3 group">
+                    <img src="/static/images/logo_color.svg" alt="KNR Bionik" class="h-9 w-auto">
+                    <span class="font-bold text-lg tracking-tight text-slate-900">KNR Bionik</span>
+                </a>
+                <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}#projects"
+                    class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    {% if lang == 'pl' %}Powrót do projektów{% else %}Back to projects{% endif %}
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 lg:pt-36 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="fade-in">
+                <!-- Header with gradient background -->
+                <div
+                    class="h-56 sm:h-72 bg-gradient-to-br {{ project.gradient }} rounded-3xl flex items-center justify-center mb-10 relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-20">
+                        <div class="absolute inset-0"
+                            style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;">
+                        </div>
+                    </div>
+                    <span class="text-7xl sm:text-8xl relative z-10">{{ project.icon }}</span>
+                </div>
+
+                <!-- Project info -->
+                <span class="text-brand-600 font-semibold text-sm tracking-widest uppercase">{{ project.category
+                    }}</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mt-2 mb-6 text-slate-900">{{ project.name }}</h1>
+                <p class="text-lg sm:text-xl text-slate-500 leading-relaxed mb-10">{{ project.description }}</p>
+
+                <!-- Detailed content -->
+                <div class="prose prose-lg prose-slate max-w-none">
+                    {{ details_html }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back link -->
+    <section class="pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}#projects"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-medium rounded-xl transition-colors">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                {% if lang == 'pl' %}Powrót do wszystkich projektów{% else %}Back to all projects{% endif %}
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-white/10 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3 text-slate-500 text-sm">
+                    <img src="/static/images/logo_color.svg" alt="KNR Bionik" class="h-6 w-auto opacity-70 logo-invert">
+                    <span>&copy; 2026 KNR Bionik</span>
+                    <span class="hidden sm:inline">&middot;</span>
+                    <span class="hidden sm:inline">{% if lang == 'pl' %}Politechnika Warszawska{% else %}Warsaw
+                        University of Technology{% endif %}</span>
+                </div>
+                <div class="flex items-center gap-4 text-slate-500 text-sm">
+                    <a href="https://www.elka.pw.edu.pl/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-brand-400 transition-colors">WEiTI PW</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
