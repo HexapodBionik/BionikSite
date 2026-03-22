@@ -3,7 +3,7 @@ backend:
   repo: HexapodBionik/BionikSite
   branch: main
   auth_type: pkce
-  app_id: Ov23lihIP5EBeBMCBOt0
+  app_id: Iv23liyai9GdDTbMffnv
 
 site_url: https://hexapodbionik.github.io/BionikSite
 
